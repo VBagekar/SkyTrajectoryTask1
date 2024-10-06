@@ -71,16 +71,16 @@ private:
         
        
         cmd_vel.linear.z = (waypoint.altitude > 0) ? 1.0 : -1.0; // Ascend/Descend
-        cmd_vel.linear.x = 1.0; // Move forward
-        cmd_vel.angular.z = 0.0; // No turning for now
+        cmd_vel.linear.x = 1.0; 
+        cmd_vel.angular.z = 0.0; 
 
         velocity_pub_->publish(cmd_vel);
     }
 
     void perform_avoidance() {
         geometry_msgs::msg::Twist cmd_vel;
-        cmd_vel.linear.x = -1.0; // Move backward
-        cmd_vel.angular.z = 0.5;  // Turn right
+        cmd_vel.linear.x = -1.0; 
+        cmd_vel.angular.z = 0.5;  
 
         velocity_pub_->publish(cmd_vel);
     }
