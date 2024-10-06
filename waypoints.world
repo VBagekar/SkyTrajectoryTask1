@@ -1,0 +1,174 @@
+<world name="waypoint_world">
+  <include>
+    <uri>model://iris</uri>
+  </include>
+
+ 
+  <model name="ground_plane">
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <light name="sun" type="directional">
+    <cast_shadows>true</cast_shadows>
+    <pose>0 0 10 0 0 0</pose>
+    <diffuse>1 1 1 1</diffuse>
+    <specular>1 1 1 1</specular>
+    <attenuation>
+      <range>100</range>
+      <constant>0.1</constant>
+      <linear>0.01</linear>
+      <quadratic>0.001</quadratic>
+    </attenuation>
+  </light>
+
+  <!-- Define Waypoints -->
+  <model name="Waypoint1">
+    <pose>37.773972 -122.431297 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name="Waypoint2">
+    <pose>37.774159 -122.431587 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name="Waypoint3">
+    <pose>37.774400 -122.431947 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name="Waypoint4">
+    <pose>37.774150 -122.432297 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name="Waypoint5">
+    <pose>37.773900 -122.431587 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  <model name="Waypoint6">
+    <pose>37.773972 -122.431297 0.1 0 0 0</pose>
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <sphere>
+            <radius>0.2</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Green</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+
+  
+  <include>
+    <uri>model:tree</uri>
+    <pose>37.775000 -122.430000 0 0 0 0</pose>
+  </include>
+
+  <include>
+    <uri>model://tree</uri>
+    <pose>37.775500 -122.430500 0 0 0 0</pose>
+  </include>
+
+  <include>
+    <uri>model://building</uri>
+    <pose>37.776000 -122.431000 0 0 0 0</pose>
+  </include>
+
+  <!-- Add more environmental models as needed -->
+</world>
+
