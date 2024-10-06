@@ -1,0 +1,21 @@
+<package format="3">
+  <name>waypoint_nav</name>
+  <version>0.0.1</version>
+  <description>A ROS2 package for autonomous waypoint navigation of a drone.</description>
+  <maintainer email="bagekarvaishnavi45@gmail.com">Aryan</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
